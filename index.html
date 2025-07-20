@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Power BI Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0; background: #f5f7fa; color: #333;
+    }
+    header {
+      background: #0078d4;
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    section.project {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .screenshots img {
+      max-width: 48%;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+    .screenshots img:hover {
+      transform: scale(1.05);
+    }
+    iframe.powerbi {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      .screenshots img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Power BI Portfolio</h1>
+    <p>Showcasing interactive dashboards & analytics projects</p>
+  </header>
+  <main>
+
+    <section class="project">
+      <h2>Sales Performance Dashboard</h2>
+      <p><strong>Project description:</strong> Interactive sales analytics dashboard showing trends, regional breakdown, and KPIs.</p>
+      <p><strong>Skills used:</strong> Power BI, DAX, Data Modeling, Visualizations</p>
+      
+      <div class="screenshots">
+        <img src="images/sales_dashboard_1.png" alt="Sales Dashboard Screenshot 1" />
+        <img src="images/sales_dashboard_2.png" alt="Sales Dashboard Screenshot 2" />
+      </div>
+
+      <!-- Replace the src below with your actual Power BI embed link (Publish to web iframe) -->
+      <iframe
+        class="powerbi"
+        src="https://app.powerbi.com/view?r=YOUR_EMBED_LINK_HERE"
+        allowfullscreen
+        title="Sales Performance Dashboard">
+      </iframe>
+    </section>
+
+    <section class="project">
+      <h2>Customer Analytics Report</h2>
+      <p><strong>Project description:</strong> Analysis of customer segmentation and lifetime value using Power BI.</p>
+      <p><strong>Skills used:</strong> Power BI, Data Transformation, RLS</p>
+      
+      <div class="screenshots">
+        <img src="images/customer_analytics_1.png" alt="Customer Analytics Screenshot 1" />
+      </div>
+
+      <iframe
+        class="powerbi"
+        src="https://app.powerbi.com/view?r=YOUR_EMBED_LINK_LINK_HERE"
+        allowfullscreen
+        title="Customer Analytics Report">
+      </iframe>
+    </section>
+
+  </main>
+  <footer>
+    <p>© 2025 Your Name • Powered by Power BI & GitHub Pages</p>
+  </footer>
+</body>
+</html>
