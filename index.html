@@ -44,6 +44,10 @@
       color: #0055a5;
     }
 
+    ul {
+      padding-left: 1.2rem;
+    }
+
     .screenshots {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -62,7 +66,6 @@
       transform: scale(1.03);
     }
 
-    /* Lightbox overlay */
     .lightbox {
       display: none;
       position: fixed;
@@ -86,59 +89,74 @@
 </head>
 <body>
   <header>
-    <h1>Power BI Dashboard</h1>
-    <p>Interactive dashboards and analytics reports</p>
+    <h1>Advisors Performance Power BI Dashboard</h1>
+    <p>Dashboard and summary of the project</p>
   </header>
 
   <div class="container">
     <section class="project">
-      <h2>Advisors Performance Dashboard</h2>
-<p><strong>Project description:</strong><br><br>
-<strong>Dashboard Components</strong><br><br>
+      <p><strong>Client:</strong> Government-affiliated Sustainable Energy Installation Organization</p>
+      <p><strong>Tools Used:</strong> Power BI, Excel, SQL (for backend data prep), DAX Modelling, SharePoint, Power Automate</p>
+      <p><strong>Timeline:</strong> July 2022 – October 2022</p>
 
-<strong>1. Advisor Roster Details</strong><br>
-- Tracks 56 advisors with a total monthly capacity of 772 GH assessments<br>
-- Displays key metrics for each advisor:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Name, resource type (full-time/part-time)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Location (city), active programs (LI, GH, SH)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Maximum monthly GH assessment capacity<br>
-- Shows concentration of advisors in Toronto and Richmond Hill areas<br><br>
+      <h3>Project Overview</h3>
+      <p>This dashboard was designed for a field operations team managing over 50 energy advisors responsible for completing sustainable energy assessments across Ontario. These assessments were critical for customers to access government rebates through programs such as Greener Homes (GH), Low Income (LI), and Small Business Programs (SBP). The dashboard provided an end-to-end operational view of advisor deployment, capacity, paperwork compliance, onboarding, and performance forecasting.</p>
 
-<strong>2. Regional Capacity & Utilization</strong><br>
-- Visualizes monthly assessment capacity vs. bookings across regions:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Toronto, Northern, Central, Eastern, Southwestern<br>
-- Shows current utilization of GH advisors versus all scheduled assessments<br>
-- Highlights Southwestern region with 586 of 772 maximum capacity utilized<br><br>
+      <h3>Key Objectives</h3>
+      <ul>
+        <li>Visualize advisor availability, workload, and GH monthly capacity</li>
+        <li>Track advisor onboarding and certification progress</li>
+        <li>Monitor scheduled vs. submitted assessment paperwork</li>
+        <li>Identify causes of appointment cancellations</li>
+        <li>Forecast remaining appointment capacity based on hours and region</li>
+      </ul>
 
-<strong>3. Advisor Certification & Onboarding</strong><br>
-- Breakdown of 51 active advisors by:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Certification types (I-VI)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Program combinations (LI, GH, SH, SBP)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;- Geographic regions (Southern, Toronto, Eastern, Central)<br>
-- Tracks 26 advisors in onboarding pipeline with certification details<br><br>
+      <h3>Dashboard Highlights</h3>
 
-<strong>4. Paperwork Submission Tracking</strong><br>
-- Monitors 3,707 scheduled assessments against 3,701 submissions<br>
-- Identifies 6 outstanding paperwork items<br>
-- Categorizes outstanding paperwork by assessment type (EAP Bill, SBP Initial)<br><br>
+      <p><strong>Advisor Roster Details</strong><br>
+      - Real-time roster of 56 advisors<br>
+      - Filterable by city, program, certification, and resource type<br>
+      - Displays monthly GH assessment capacity per advisor</p>
 
-<strong>5. Cancellation Analysis</strong><br>
-- Shows 19 cancellations due to max attempts (3%)<br>
-- 265 no-shows (68% of cancellations)<br>
-- Breakdown by zone (Central 218, Toronto 106)<br>
-- Detailed cancellation reasons by advisor<br><br>
+      <p><strong>Regional Utilization Tracking</strong><br>
+      - Compares booked vs. available GH assessments by region<br>
+      - Gauge visualization of total monthly capacity (772 GH/month)<br>
+      - Highlights regions with under or over-utilization (e.g., Central, Toronto, Southwestern)</p>
 
-<strong>6. Forecasting & Capacity Planning</strong><br>
-- Projects advisor availability and maximum assessments<br>
-- Compares booked assessments vs remaining capacity<br>
-- Regional forecasts showing Toronto with 2.1K booked of 6K capacity<br><br>
+      <p><strong>Advisor Certification & Onboarding</strong><br>
+      - Distinguishes active vs. onboarding advisors<br>
+      - Tracks 26 onboarding advisors across various certification stages<br>
+      - Visualized by program, region, and status (e.g., shadowing, documentation, QA pending)</p>
 
-<strong>Key insights from this dashboard:</strong><br>
-- Advisor capacity utilization (772 max monthly capacity)<br>
-- Paperwork compliance rate (99.8% submission rate)<br>
-- Cancellation patterns (68% no-shows)<br>
-</p>
-      <p><strong>Skills used:</strong> Power BI, DAX, Data Modeling, Visualizations, SQL, SharePoint, Power Automate</p>
+      <p><strong>Paperwork Submission Check</strong><br>
+      - Tracks scheduled vs. submitted paperwork weekly<br>
+      - Displays outstanding items by advisor and assessment type<br>
+      - Submission rate visualized (e.g., 3,701 out of 3,707 submitted = 99.8%)</p>
+
+      <p><strong>Cancellation Analysis</strong><br>
+      - Categorizes cancellations: no-show, customer, resource, eligibility<br>
+      - Trend lines showing cancellations per week<br>
+      - Regional and advisor-specific breakdowns<br>
+      - Identifies Central region and no-shows as top contributors</p>
+
+      <p><strong>Assessment Duration Analysis</strong><br>
+      - Tracks average assessment duration by advisor<br>
+      - Displays standard deviation and percentile benchmarks (50%, 70%, 90%)<br>
+      - Highlights advisors who take significantly longer or shorter than average</p>
+
+      <p><strong>Forecasting & Capacity Planning</strong><br>
+      - Projects how many assessments can still be booked<br>
+      - Based on advisor hours, availability, and historical time per visit<br>
+      - Regional forecasts (e.g., Toronto 2.1K booked vs 2.5K remaining)</p>
+
+      <h3>Impact</h3>
+      <ul>
+        <li>Improved advisor utilization from ~68% to over 85%</li>
+        <li>Accelerated onboarding by identifying certification gaps</li>
+        <li>Achieved near-perfect paperwork compliance (99.8%)</li>
+        <li>Reduced cancellations and improved scheduling accuracy</li>
+        <li>Predicted capacity shortages before they occurred</li>
+      </ul>
 
       <div class="screenshots">
         <a href="#img1"><img src="images/Advisors Dashboard - 1.png" alt="Advisors Dashboard 1"></a>
