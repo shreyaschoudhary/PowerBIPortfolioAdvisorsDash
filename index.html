@@ -3,139 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio - Advisors Performance Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"/>
+  <title>My Power BI Portfolio</title>
   <style>
-    :root {
-      --primary-color: #0077cc;
-      --bg-light: #f8f9fa;
-      --text-dark: #222;
-      --text-light: #888;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-dark);
-      line-height: 1.6;
+      padding: 0;
+      color: #333;
     }
 
     header {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 3rem 1rem;
+      background: #0055a5;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
     }
 
-    header p {
-      margin-top: 0.5rem;
-      color: #ccc;
-      font-size: 1.15rem;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
     }
 
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .project {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
     }
 
-    .project-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 2rem;
-      margin-bottom: 3rem;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .project-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .project-card h2 {
-      font-size: 2rem;
-      color: var(--primary-color);
-      margin-bottom: 1rem;
-    }
-
-    .project-card p {
-      margin-bottom: 1rem;
-    }
-
-    .skills-used {
-      font-weight: 600;
-      color: #444;
+    .project h2 {
+      margin-top: 0;
+      color: #0055a5;
     }
 
     .screenshots {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
 
     .screenshots img {
       width: 100%;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s ease;
+      border-radius: 8px;
       cursor: zoom-in;
+      transition: transform 0.3s;
     }
 
     .screenshots img:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
 
-    footer {
-      background: #1a1a1a;
-      color: var(--text-light);
-      padding: 2rem 1rem;
-      text-align: center;
-      font-size: 0.95rem;
+    /* Lightbox overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Power BI Projects</h1>
-    <p>Data storytelling through clean dashboards & insightful KPIs</p>
+    <h1>My Power BI Projects</h1>
+    <p>Interactive dashboards and analytics reports</p>
   </header>
 
-  <main>
-    <section class="project-card">
-      <h2>Advisors Performance Dashboard</h2>
-      <p><strong>Project description:</strong> Dashboard monitoring advisor resources, assessments, and compliance for sustainable energy program management.</p>
-      <p class="skills-used"><strong>Skills used:</strong> Power BI, DAX, Data Modeling, Visualizations</p>
+  <div class="container">
+    <section class="project">
+      <h2>Sales Performance Dashboard</h2>
+      <p><strong>Project description:</strong> Interactive sales analytics dashboard showing trends, regional breakdown, and KPIs.</p>
+      <p><strong>Skills used:</strong> Power BI, DAX, Data Modeling, Visualizations</p>
 
       <div class="screenshots">
-        <a href="images/Advisors Dashboard - 1.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 1.png" alt="Advisors Dashboard - 1" /></a>
-        <a href="images/Advisors Dashboard - 2.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 2.png" alt="Advisors Dashboard - 2" /></a>
-        <a href="images/Advisors Dashboard - 3.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 3.png" alt="Advisors Dashboard - 3" /></a>
-        <a href="images/Advisors Dashboard - 4.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 4.png" alt="Advisors Dashboard - 4" /></a>
-        <a href="images/Advisors Dashboard - 5.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 5.png" alt="Advisors Dashboard - 5" /></a>
-        <a href="images/Advisors Dashboard - 6.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 6.png" alt="Advisors Dashboard - 6" /></a>
-        <a href="images/Advisors Dashboard - 7.png" data-lightbox="advisors"><img src="images/Advisors Dashboard - 7.png" alt="Advisors Dashboard - 7" /></a>
+        <a href="#img1"><img src="images/Advisors Dashboard - 1.png" alt="Advisors Dashboard 1"></a>
+        <a href="#img2"><img src="images/Advisors Dashboard - 2.png" alt="Advisors Dashboard 2"></a>
+        <a href="#img3"><img src="images/Advisors Dashboard - 3.png" alt="Advisors Dashboard 3"></a>
+        <a href="#img4"><img src="images/Advisors Dashboard - 4.png" alt="Advisors Dashboard 4"></a>
+        <a href="#img5"><img src="images/Advisors Dashboard - 5.png" alt="Advisors Dashboard 5"></a>
+        <a href="#img6"><img src="images/Advisors Dashboard - 6.png" alt="Advisors Dashboard 6"></a>
+        <a href="#img7"><img src="images/Advisors Dashboard - 7.png" alt="Advisors Dashboard 7"></a>
       </div>
     </section>
-  </main>
+  </div>
 
-  <footer>
-    &copy; 2025 Your Name. All rights reserved.
-  </footer>
+  <!-- Lightbox Modals -->
+  <div id="img1" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 1.png"></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 2.png"></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 3.png"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 4.png"></a></div>
+  <div id="img5" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 5.png"></a></div>
+  <div id="img6" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 6.png"></a></div>
+  <div id="img7" class="lightbox"><a href="#"><img src="images/Advisors Dashboard - 7.png"></a></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
